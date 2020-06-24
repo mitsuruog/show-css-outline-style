@@ -1,12 +1,10 @@
+import { isValidSiteURL } from "./shared/services/validation";
+
 const ID_NAME = "show-css-outline-style";
 const CSS_STYLE = "* { outline: 1px solid #F44336; }";
 
 chrome.browserAction.onClicked.addListener(({ url = "" }) => {
-  if (!url.startsWith("http://") && !url.startsWith("https://")) {
-    return;
-  }
-  // due to "Unchecked runtime.lastError: The extensions gallery cannot be scripted."
-  if (url.startsWith("https://chrome.google.com/webstore")) {
+  if (!isValidSiteURL(url)) {
     return;
   }
   chrome.tabs.executeScript({
