@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Show CSS Outline Style",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "ページ上にある全ての要素のOutlineを表示します。",
+    "description": "The description of the application"
+  }
+}
