@@ -5,6 +5,10 @@ chrome.browserAction.onClicked.addListener(({ url = "" }) => {
   if (!url.startsWith("http://") && !url.startsWith("https://")) {
     return;
   }
+  // due to "Unchecked runtime.lastError: The extensions gallery cannot be scripted."
+  if (url.startsWith("https://chrome.google.com/webstore")) {
+    return;
+  }
   chrome.tabs.executeScript({
     code: `
     ;(function() {
