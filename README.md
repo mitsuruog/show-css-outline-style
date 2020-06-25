@@ -8,7 +8,7 @@ Chrome extensions that show the outline of all the elements that exist on the pa
 
 ## Install
 
-<!-- - [Chrome web store](https://chrome.google.com/webstore/detail/nkbceicafhlobddjmlflmhbloffdekcd) -->
+- [Chrome web store](https://chrome.google.com/webstore/detail/dfokncajfigoddlhjenapaleiefcldoh)
 
 ## Features
 
