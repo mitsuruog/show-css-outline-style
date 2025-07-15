@@ -4,8 +4,8 @@
   "description": "Chrome extensions that show the outline of all the elements that exist on the page.",
   "private": true,
   "scripts": {
-    "start": "webpack",
-    "package": "webpack && node scripts/package.js",
+    "start": "NODE_OPTIONS=\"--openssl-legacy-provider\" webpack",
+    "package": "NODE_OPTIONS=\"--openssl-legacy-provider\" webpack && node scripts/package.js",
     "test": "jest  --coverage --env=jsdom --runInBand"
   },
   "engines": {
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@testing-library/dom": "7.5.7",
     "@testing-library/jest-dom": "5.8.0",
-    "@types/chrome": "0.0.113",
+    "@types/chrome": "0.0.246",
     "@types/jest": "25.2.3",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
